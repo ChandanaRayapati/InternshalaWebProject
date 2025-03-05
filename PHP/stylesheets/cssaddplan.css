@@ -1,0 +1,183 @@
+
+
+
+body, html {
+    background-image: url(image_1.jpg);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    overflow-y: auto;
+}
+input[type=text],input[type=number],input[type=date] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px 0px 5px 0px;
+    box-sizing: border-box;
+}
+input[type=submit]:focus {
+    outline: 0 !important;
+}
+label{
+    margin: 5px 0px 2px 0px;
+    font-size: 14px;
+}
+.error{
+    color: #0277bd;
+}
+.strong{
+    font-family: sans-serif;
+}
+.panel > .panel-heading{
+    text-align: center;
+}
+
+
+
+.panelclass{
+    margin:0px auto; 
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-25%);
+}
+.details{
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+.newplanclass{
+    margin:100px auto;
+}
+.alert{
+    margin: 5px auto;
+    text-align: center;
+}
+
+.button{ 
+    color: #8d6e63;
+    text-align: center;
+    padding: 6px;
+    display:block; 
+    width: 100%;
+    margin: 10px auto;
+    border-color: #8d6e63;
+    border-width: 1px;
+    border-radius: 5px;    
+}
+.button:hover{
+    background-color: #8d6e63;
+    color: rgba(255,255,255,0.9);
+    font-weight: bold;
+}
+
+
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    height:3%;
+    width: 100%;
+    background-color: #212121;
+    color:rgba(255,255,255,0.5) ;
+    text-align: center;
+}
+tt{
+    text-align: center;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    *{
+        font-size: 12px;
+    }
+    .footer{
+        display: none;
+    }
+    .panelclass{
+        width: 90%;
+    }
+    .newplanclass{
+        width: 95%;
+    }
+    .alert{
+        width: 95%;
+        padding: 7px;
+    } 
+    
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px)
+{
+    *{
+        font-size: 12px;
+    }
+    .footer{
+        display: none;
+    }
+    .panelclass{
+        width: 50%;
+    }
+    .newplanclass{
+        width: 65%;
+    }
+    .alert{
+        width: 70%;
+        padding: 8px;
+    } 
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    *{
+        font-size: 13px;
+    }
+    .panelclass{
+        width: 45%;
+    }
+    .newplanclass{
+        width: 60%;
+    }
+    .footer tt{
+        font-size: 12px;
+    }
+    .alert{
+        width: 75%;
+    } 
+           
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) 
+{
+    *{
+        font-size: 15px;
+    }
+    .panelclass{
+        width: 35%;
+    }
+    .newplanclass{
+        width: 50%;
+    }
+    .footer tt{
+        font-size: 12px;
+    }
+    .alert{
+        width: 60%;
+    }
+    
+}

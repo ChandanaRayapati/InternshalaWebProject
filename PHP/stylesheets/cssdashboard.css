@@ -1,0 +1,400 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+.plussign{ 
+    position:fixed;
+    float: right;
+    margin: 10px;
+    margin-bottom: 25px;
+    bottom: 0;
+    right: 0px;
+}
+.ppl{
+    font-weight: 600;
+    float: right;
+}
+.divclass{
+    margin: 0px auto;
+}
+input[type=submit]:focus {
+    outline: 0 !important;
+}
+input[type=text],input[type=number],input[type=password],input[type=email],input[type=date]:focus{
+    outline: 0 !important;
+}
+button:focus {
+    outline: 0 !important;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+input[type=text],input[type=number],input[type=password],input[type=email],input[type=date] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px 0px 5px 0px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.divclass_head{
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    color: grey;
+    text-align: left;
+    margin: 10px 50px;
+}
+.divhead{
+    font-family: sans-serif;
+    font-weight: 700;
+    color:grey;
+    margin: 10px;
+    text-align: center;
+}
+.divclass_body{
+    color: grey;
+    width:22%;
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-radius: 4px;
+    border-radius: 4px;
+    border-width: 1px;
+    margin: 40px auto;
+    padding:60px 5px;
+    display: block;
+    text-align: center;
+}
+.divclass_body:hover{
+    border-color: #a5d6a7;
+    color: white;
+    background-color: #a5d6a7;
+}
+
+
+
+
+/* Sidebar styling*/
+.sidebar{
+    height: 100%;
+    background-color: #424242;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+}    
+.sidebar  a{
+    color:rgba(255,255,255,0.8);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.sidebar .addplan{
+    text-align: center;
+    display: none;
+}
+.sidebar a:hover{
+    color:white ;
+    background-color:rgba(255,255,255,0.4);
+    text-decoration: none;
+}
+.sidebar .totalplans{
+    height:25%;
+    width:90%; 
+    position: absolute;
+    bottom: 60px;
+    margin: 20px 10px;
+    background-color: #212121;
+}
+.sidebar .totalplans h1{
+    color:rgba(255,255,255,0.7);
+    text-align: center;
+    font-size:  50px;
+    padding: 10px;
+    margin: 0px;
+}
+.sidebar .totalplans h3{
+    color:rgba(255,255,255,0.8);
+    text-align: left; 
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+/* main content that has panels of plans*/
+.main_content{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+.main_content .panelclass{
+    padding: 0px;
+    margin:auto 20px;
+    display: block;
+}
+.main_content .row1{
+    margin: 20px 50px;
+}
+.panel > .panel-heading{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.button{ 
+    color: grey;
+    text-align: center;
+    padding: 7px;
+    display:block; 
+    width: 100%;
+    font-weight: 700;
+    background-color:#f5f5f5;
+    margin-top: 12px;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;    
+}
+.button:hover{
+    color: white;
+    font-weight: 700;
+    background-color:#80cbc4;
+}
+
+
+
+/*Footer styling*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    height:3%;
+    width: 100%;
+    background-color: #212121;
+    color:rgba(255,255,255,0.5) ;
+    text-align: center;
+    font-size: 12px;
+ }
+tt{
+    text-align: center;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    *{
+        font-size: 12px;
+    }
+    .plussign{ 
+        display:none;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        padding: 0px 0px;
+    }
+    .sidebar a{
+        padding: 5px;
+    }
+    .sidebar .addplan{
+        display: block;        
+    }
+    .sidebar .totalplans{
+        display: none;
+    }
+    .main_content{
+        margin-top: 10px;
+        width: 100%;
+        height: 80%;
+        margin: 0px auto;
+        padding-bottom: 20px;
+    }
+    .main_content .row1{
+       margin: 0px 20px;
+    }
+    .main_content .row1 .panelclass{
+        width: 100%;
+        margin: 10px auto;
+        margin-bottom: 0px;
+    }
+    .panel > .panel-heading{
+        font-size: 13px;
+    }
+    .main_content .divhead{
+        font-size: 14px;
+    }
+    .main_content .divclass_head{
+        margin: 10px 20px;
+    }
+    .divclass_head b{
+        font-size: 14px;
+    }
+    .divclass_body{
+        width: 60%;
+        margin: 30px auto;
+        padding:40px 5px;
+    }
+    .footer{
+        display: none;
+    }
+       
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px)
+{
+    *{
+        font-size: 12px;
+    }
+    .plussign{ 
+        display:none;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        padding: 0px 0px;
+    }
+    .sidebar a{
+        padding: 5px;
+    }
+    .sidebar .addplan{
+        display: block;        
+    }
+    .sidebar .totalplans{
+        display: none;
+    }
+    .main_content{
+        margin-top: 10px;
+        width: 100%;
+        height: 80%;
+        margin: 0px auto;
+        padding-bottom: 20px;
+    }
+    .main_content .row1{
+       margin: 0px 20px;
+    }
+    .main_content .row1 .panelclass{
+        width: 75%;
+        float: none;
+        margin: 15px auto;
+        margin-bottom: 0px;
+    }
+    .panel > .panel-heading{
+        font-size: 13px;
+    }
+    .main_content .divhead{
+        font-size: 14px;
+    }
+    .main_content .divclass_head{
+        margin: 10px 20px;
+    }
+    .divclass_head b{
+        font-size: 14px;
+    }
+    .divclass_body{
+        width: 40%;
+        margin: 30px auto;
+        padding:40px 5px;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+   
+    *{
+        font-size: 13px;
+    }
+    .main_content .divhead{
+        font-size: 15px;
+    }
+    .main_content .divclass_head{
+        margin: 10px 20px;
+    }
+    .divclass_head b{
+        font-size: 15px;
+    }
+    .divclass_body{
+        width:35%;
+    }
+    .sidebar{
+        width: 200px;
+    } 
+    .main_content{
+        margin-left: 200px;
+    }
+    .main_content .row1{
+       margin: 0px 20px;
+    }
+    .main_content .row1 .panelclass {
+        width: 70%;
+        float: none;
+        margin: 15px auto;
+        margin-bottom: 0px;
+    }
+    .panel > .panel-heading{
+        font-size: 14px;
+    }
+    .footer tt{
+        font-size: 12px;
+    }   
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px)
+{
+   
+    *{
+        font-size: 15px;
+    }
+    .main_content .divhead{
+        font-size: 17px;
+    }
+    .main_content .divclass_head{
+        margin: 10px 50px;
+    }
+    .divclass_head b{
+        font-size: 17px;
+    }
+    .divclass_body{
+        width:22%;
+    }
+    .main_content{
+        margin-left: 225px;
+    }
+    .sidebar{
+        width: 225px;
+    } 
+    .main_content .panelclass {
+        width: 38%;
+    }
+    .panel > .panel-heading{
+        font-size: 16px;
+    }
+    .footer tt{
+        font-size: 13px;
+    }    
+}
+
+
+
+

@@ -1,0 +1,489 @@
+
+
+/*Common styling for pages using this stylesheet*/
+body{
+    background-color: #e0f2f1;
+}
+a{
+    text-decoration: none;   
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+   text-decoration: none;  
+}
+button:focus {
+    outline: 0 !important;
+}
+input[type=submit]:focus {
+    outline: 0 !important;
+}
+input[type=text],input[type=number],input[type=date] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px 0px 5px 0px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+select{
+    width: 100%;
+    padding: 7px;
+    margin: 0px 0px 5px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label{
+    margin: 5px 0px 2px 0px;
+}
+.divclass{
+    margin: 0px auto;
+}
+.heading{
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    color: grey;
+    text-align: center;
+    margin: 20px 30px;
+}
+.panel > .panel-heading{
+    text-align: center;
+}
+
+
+
+
+/*Sidebar styling*/
+.sidebar{
+    width: 225px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+}    
+.sidebar a{
+    color:rgba(255,255,255,0.8);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+} 
+.sidebar a.active {
+  background-color:rgba(255,255,255,0.3);
+  color: white;
+}
+.sidebar a:hover{
+    color:white ;
+    background-color:rgba(255,255,255,0.4);
+    text-decoration: none;
+} 
+
+
+
+/*Styling for elements in ViewplanPHP.php and NewExpensePHP.php pages.*/
+.main_content{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    height: 100%;
+    background-color: #e0f2f1;
+    overflow-y: auto;
+}
+.main_content .panelclass{
+    margin:20px auto;
+    display: block;
+}
+.main_content .panelclass1{
+    margin:20px auto;
+    display: block;
+}
+.main_content .panelclass2{
+    margin:0px auto;
+    display: block;
+}
+.main_content .panelclass1 .panel-footer{
+   text-align: center;
+   padding: 5px;
+}
+.main_content .foralert{
+    height: 54px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.main_content .foralert .alert{
+    margin: 0px auto;
+    text-align: center;
+    background-color: #a5d6a7;
+    border-color: #a5d6a7;
+}
+.button{ 
+    color: grey;
+    text-align: center;
+    padding: 7px;
+    display:block; 
+    width: 100%;
+    font-weight: 700;
+    background-color:#f5f5f5;
+    margin-top: 12px;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;    
+}
+.button:hover{
+    background-color:#80cbc4;
+    color: white;
+}
+.expdistbtn{
+    color: #00897b;
+    height: 20%;
+    background-color: transparent;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 400;
+}
+.expdistbtn:hover{
+    border-color:#00897b ;
+    background-color: #00897b;
+    color: white;
+    font-weight: 300;
+}
+.bill_link{
+    border: none;
+    border-color: transparent;
+    background-color:whitesmoke;
+    color: #1976d2;
+    display:block; 
+    width: 100%;
+    text-align: center;
+}
+.disabled{
+    pointer-events: none;
+}
+.error{
+    color: #0277bd;
+}
+.main_content .divhead{
+    font-family: sans-serif;
+    font-weight: 700;
+    color:grey;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+
+
+/*Styling for elements in ExpenseDistPHP.php page*/
+.bged{
+    height:100%;
+    overflow-y: auto;
+    position: relative;
+}
+.bged .panelclassed{
+    margin: 100px auto;
+    display: block;
+}
+.ppl{
+    font-weight: 600;
+    float: right;
+}
+.gobackbutton{ 
+    color:grey;
+    text-align: center;
+    padding: 8px;
+    display:block; 
+    font-weight: 700;
+    background-color:#f5f5f5;
+    margin: 10px auto;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;    
+}
+.gobackbutton:hover{
+    background-color: #80cbc4;
+    color:white;
+}   
+
+
+
+/*Footer styling*/
+.footer{ 
+    position: fixed;
+    bottom: 0;
+    height:3%;
+    width: 100%;
+    background-color: #212121;
+    color:rgba(255,255,255,0.5) ;
+    text-align: center;
+}
+tt{
+    text-align: center;
+}
+ 
+
+/*Billpage*/
+.image{ 
+    width: 90%;
+    height: auto;
+    margin: 20px auto;   
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px)
+{
+    .footer{
+        display: none;
+    }
+    *{
+        font-size: 12px;
+    }
+    .heading{
+        font-size: 14px;
+        margin: 10px 10px;
+    }
+    .main_content .divhead{
+        font-size: 13px;
+    }
+    .panel > .panel-heading{
+        font-size: 13px;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        padding: 0px 0px;
+    }
+    .sidebar a{
+        padding: 4px;
+    }
+    .main_content{
+        margin-top: 10px;
+        width: 100%;
+        height: 80%;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+    .main_content .panelclass{
+        width: 85%;
+    }
+    .main_content .panelclass1{
+        width: 85%;
+    }
+    .main_content .panelclass2{
+        width: 85%;
+    }
+    .main_content .foralert .alert{
+        width:90%;
+        text-align: center;
+    }
+    .bged .panelclassed{
+        width:90%;
+    }
+    .gobackbutton{
+        width:70%;
+    }
+    .expdistbtn{
+        width:70%;
+        padding: 7px;
+        font-size: 13px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    
+    .footer{
+        display: none;
+    }
+    *{
+        font-size: 12px;
+    }
+    .heading{
+        font-size: 14px;
+        margin: 10px 10px;
+    }
+    .main_content .divhead{
+        font-size: 14px;
+    }
+    .panel > .panel-heading{
+        font-size: 13px;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        padding: 0px 0px;
+    }
+    .sidebar a{
+        padding: 5px;
+    }
+    .main_content{
+        margin-top: 10px;
+        width: 100%;
+        height: 80%;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+    .main_content .panelclass{
+        width: 70%;
+    }
+    .main_content .panelclass1{
+        width: 60%;
+    }
+    .main_content .panelclass2{
+        width: 70%;
+    }
+    .main_content .foralert .alert{
+        width:85%;
+        text-align: center;
+    }
+    .bged .panelclassed{
+        width:90%;
+    }
+    .gobackbutton{
+        width:60%;
+    }
+    .expdistbtn{
+        width:40%;
+        padding: 7px;
+        font-size: 13px;
+    }
+       
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px)  and (max-width: 991px)
+{
+    
+    .panel > .panel-heading{
+        font-size: 14px;
+    }
+    *{
+        font-size: 13px;
+    }
+    .heading{
+        font-size: 15px;
+        margin: 10px 10px;
+    }
+    .main_content .divhead{
+        font-size: 15px;
+    }
+    .sidebar{
+        width: 200px;
+    }  
+    .main_content{
+        margin-left: 200px;
+    }
+    .main_content .panelclass{
+        width: 60%;
+    }
+    .main_content .panelclass1{
+        width: 50%;
+    }
+    .main_content .panelclass2{
+        width: 60%;
+    }
+    .main_content .foralert .alert{
+        width:70%;
+        text-align: center;
+    }
+    .bged .panelclassed{
+        width:70%;
+    }
+    .expdistbtn{
+        width:40%;
+        font-size: 14px;
+    }
+    .gobackbutton{
+        width:45%;
+    }
+    .image{
+        width: 80%;
+    }
+    .footer tt{ 
+        font-size: 12px;
+    }
+     
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) 
+{
+    .panel > .panel-heading{
+        font-size: 16px;
+    }
+    *{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 17px;
+        margin: 10px 30px;
+    }
+    .main_content .divhead{
+        font-size: 17px;
+    }
+    .sidebar{
+        width: 225px;
+    }  
+    .main_content{
+        margin-left: 225px;
+    }
+    .main_content .panelclass{
+        width: 50%;
+    }
+    .main_content .panelclass1{
+        width: 40%;
+    }
+    .main_content .panelclass2{
+        width: 50%;
+    }
+    .main_content .foralert .alert{
+        width:60%;
+        text-align: center;
+    }
+    .bged .panelclassed{
+        width:45%;
+    }
+    .expdistbtn{
+        width:25%;
+        font-size: 16px;
+    }
+    .image{
+        width: 70%;
+    }
+    .gobackbutton{
+        width:30%;
+    }
+    .footer tt{ 
+        font-size: 12px;
+    }
+ 
+
+}
+
+
+
+
